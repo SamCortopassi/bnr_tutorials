@@ -16,37 +16,27 @@ class ViewController: UIViewController {
         
         
         /**** DO STUFF HERE ****/
-        var someCharacter:Character = "c"
         
-        switch someCharacter {
-        case "a":
-                print("is an A")
-
-        case "b":
-                print("is a B")
-
+        var statusCode: Int = 401
+        var errorString: String
+        switch statusCode {
+        case 400:
+            errorString = "Bad request"
+            
+        case 401:
+            errorString = "Unauthorized"
+        
+        case 403:
+            errorString = "Forbidden"
+        
+        case 404:
+            errorString = "Not found"
+            
         default:
-            print("some fallback")
+            errorString = "None"
         }
+        print (errorString)
         
-        for index in 1...5 {
-            print("hello")
-        }
-        for index in 1...5 {
-            print(index)
-        }
-        
-        for index in 1...5 {
-            var sum = 0
-            sum += index
-            print(sum)
-        }
-        
-        var sum = 0
-        for index in 1...5 {
-            sum += index
-        }
-        print(sum)
         
         /**** END: DO STUFF HERE ****/
         
