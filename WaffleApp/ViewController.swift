@@ -17,17 +17,31 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
         
-        var statusCode: Int = 404
-        var errorString: String = "The request failed:"
-        switch statusCode {
-        case 400, 401, 403, 404:
-            errorString = "There was something wrong with the request."
-            fallthrough
-        default:
-            errorString += " Please review the request and try again."
-        }
-        print (errorString)
+        let point = (x: 1, y: 4)
         
+        switch point {
+        case let q1 where (point.x > 0) && (point.y > 0):
+            print("\(q1) is in quadrant 1")
+        
+        case let q2 where (point.x < 0) && (point.y > 0):
+            print("\(q2) is in quadrant 2")
+            
+        case let q3 where (point.x < 0) && (point.y < 0):
+            print ("\(q3) is in quadrant 3")
+            
+        case let q4 where (point.x > 0) && (point.y < 0) :
+            print ("\(q4) is in quadrant 3")
+            
+        case (_, 0) :
+            print("\(point) sits on the x-asis")
+            
+        case (0, _) :
+            print("\(point) sits on the y-axis")
+            
+        default:
+            print("case not covered")
+            
+        }
         
         /**** END: DO STUFF HERE ****/
         
