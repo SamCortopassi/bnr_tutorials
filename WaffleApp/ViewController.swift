@@ -19,12 +19,15 @@ class ViewController: UIViewController {
         var e = [String]()
         
         d += ["mouse", "owl"]
-        
+        d.remove(at: 3)
         
         for item in d {
         print("my " + item)
         }
 
+        d.count
+        
+        print (d.count)
         /**** DO STUFF HERE ****/
         
       
