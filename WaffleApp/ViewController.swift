@@ -19,25 +19,33 @@ class ViewController: UIViewController {
         /**** DO STUFF HERE ****/
         
     var bucketList = ["Climb Mt Everest"]
-        bucketList.append("Fly hot air balloon to Fiji.")
-        bucketList.append("watch LOTR")
-        bucketList.append("walkabout")
-        bucketList.append("Great blue hole")
-        bucketList.append("Triple Rainbow")
+    var newItems = ["Fly hot air balloon to Fiji.",
+        "watch LOTR",
+        "walkabout",
+        "Great blue hole",
+        "Triple Rainbow"
+        ]
+        
+       bucketList += newItems
+        print(bucketList.count)
+        print(bucketList[0...5])
         bucketList[3] += " in Australia"
         bucketList[0] = "Climb Kilimanjaro"
+        bucketList.insert("alaska", at: 2)
+        
+        var myronsList = ["Climb Mt Everest",
+                          "Fly hot air balloon to Fiji.",
+                          "alaska",
+                          "walkabout",
+                          "Great blue hole",
+                          "Triple Rainbow"
+        ]
+        
+        let equal = (bucketList == myronsList)
         
         
-        var bucketList2 = ["Climb hill"]
-        var newItems = ["hot air balloon", "Watch Harry Potter", "vacation Italy", "surf", "cattle drive"]
         
-        for item in newItems {bucketList2.append(item)
-        }
-        bucketList2[4] += " in HI"
-        bucketList2[5] = "push steer"
-        
-        
-        print(bucketList2)
+        print(bucketList)
         
         
         
