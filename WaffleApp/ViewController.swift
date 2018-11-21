@@ -18,35 +18,10 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
         
-    var bucketList = ["Climb Mt Everest"]
-    var newItems = ["Fly hot air balloon to Fiji.",
-        "watch LOTR",
-        "walkabout",
-        "Great blue hole",
-        "Triple Rainbow"
-        ]
-        
-       bucketList += newItems
-        print(bucketList.count)
-        print(bucketList[0...5])
-        bucketList[3] += " in Australia"
-        bucketList[0] = "Climb Kilimanjaro"
-        bucketList.insert("alaska", at: 2)
-        
-        var myronsList = ["Climb Mt Everest",
-                          "Fly hot air balloon to Fiji.",
-                          "alaska",
-                          "walkabout",
-                          "Great blue hole",
-                          "Triple Rainbow"
-        ]
-        
-        let equal = (bucketList == myronsList)
-        
-        
-        
-        print(bucketList)
-        
+        var list: [String] = ["take out trash", "pay bills", "cross off finished items"]
+     
+        list = list.reversed()
+        print(list)
         
         
         /**** END: DO STUFF HERE ****/
