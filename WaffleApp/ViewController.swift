@@ -17,37 +17,23 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
+    
+        var number: Int = 0
         
-     var shields = 5
-        var blastersOverheating = false
-        var blasterFireCount = 0
-        var spaceDemonsDestroyed = 0
-        while shields > 0 {
-            
-            if spaceDemonsDestroyed == 500 {
-            print("You beat the game!")
-            break
+        for number in 0...50 {
+            if number % 3 == 0 {
+                print("\(number)  fizz")
             }
-            
-            
-        if blastersOverheating {
-            print("Blasters are overheated! Cooldown initiated.")
-            sleep(5)
-            print("Blasters are ready to fire")
-            sleep(1)
-            blastersOverheating = false
-            blasterFireCount = 0
+            if number % 5 == 0 {
+                print("\(number)  bizz")
+               
+                switch number {
+                case let number where (number % 5 == 0) && (number % 3 == 0 ):
+                    print("\(number) FizzBizz")
+                default:
+                print ("Done")
+                }
             }
-            if blasterFireCount > 100 {
-                blastersOverheating = true
-                continue
-            }
-            // fire blasters!
-            print("Fire blasters!")
-            
-            blasterFireCount += 1
-            spaceDemonsDestroyed += 1
-            
         }
         
         
