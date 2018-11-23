@@ -21,8 +21,15 @@ class ViewController: UIViewController {
      var shields = 5
         var blastersOverheating = false
         var blasterFireCount = 0
+        var spaceDemonsDestroyed = 0
         while shields > 0 {
-        
+            
+            if spaceDemonsDestroyed == 500 {
+            print("You beat the game!")
+            break
+            }
+            
+            
         if blastersOverheating {
             print("Blasters are overheated! Cooldown initiated.")
             sleep(5)
@@ -39,6 +46,7 @@ class ViewController: UIViewController {
             print("Fire blasters!")
             
             blasterFireCount += 1
+            spaceDemonsDestroyed += 1
             
         }
         
