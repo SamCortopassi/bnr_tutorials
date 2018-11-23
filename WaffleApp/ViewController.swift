@@ -18,10 +18,30 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
         
-        var list: [String] = ["take out trash", "pay bills", "cross off finished items"]
-     
-        list = list.reversed()
-        print(list)
+     var shields = 5
+        var blastersOverheating = false
+        var blasterFireCount = 0
+        while shields > 0 {
+        
+        if blastersOverheating {
+            print("Blasters are overheated! Cooldown initiated.")
+            sleep(5)
+            print("Blasters are ready to fire")
+            sleep(1)
+            blastersOverheating = false
+            blasterFireCount = 0
+            }
+            if blasterFireCount > 100 {
+                blastersOverheating = true
+                continue
+            }
+            // fire blasters!
+            print("Fire blasters!")
+            
+            blasterFireCount += 1
+            
+        }
+        
         
         
         /**** END: DO STUFF HERE ****/
