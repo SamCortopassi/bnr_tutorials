@@ -20,23 +20,32 @@ class ViewController: UIViewController {
     
         var number: Int = 0
         
-        for number in 0...50 {
-            if number % 3 == 0 {
-                print("\(number)  fizz")
-            }
-            if number % 5 == 0 {
-                print("\(number)  bizz")
-               
-                switch number {
-                case let number where (number % 5 == 0) && (number % 3 == 0 ):
-                    print("\(number) FizzBizz")
-                default:
-                print ("Done")
+        for number in 1...20 {
+            if number % 3 == 0, number % 5 == 0 {
+                print ("\(number) Fizz Buzz")}
+            
+                if number % 3 == 0 {
+                    print("\(number)  fizz")
                 }
-            }
-        }
+                if number % 5 == 0 {
+                    print("\(number)  buzz")
+                } else {
+                    print("\(number)")
+                    }
+                }
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
         
         /**** END: DO STUFF HERE ****/
         
