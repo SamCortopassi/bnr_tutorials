@@ -24,16 +24,17 @@ class ViewController: UIViewController {
             if number % 3 == 0, number % 5 == 0 {
                 print ("\(number) Fizz Buzz")}
             
-                if number % 3 == 0 {
-                    print("\(number)  fizz")
+            else if number % 3 == 0 {
+                    print("\(number) fizz")
                 }
-                if number % 5 == 0 {
-                    print("\(number)  buzz")
-                } else {
+            else if number % 5 == 0 {
+                    print("\(number) buzz")
+            }
+            else if number % 3 == 0, number % 5 == 0 {
+                        print ("\(number) Fizz Buzz") }
+            else if number >= 1 {
                     print("\(number)")
                     }
-                }
-        
         
         
         
@@ -51,10 +52,11 @@ class ViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
 
 
+}
