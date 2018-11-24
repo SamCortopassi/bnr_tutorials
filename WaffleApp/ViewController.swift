@@ -29,10 +29,7 @@ class ViewController: UIViewController {
                 }
             else if number % 5 == 0 {
                     print("\(number) buzz")
-            }
-            else if number % 3 == 0, number % 5 == 0 {
-                        print ("\(number) Fizz Buzz") }
-            else if number >= 1 {
+            } else {
                     print("\(number)")
                     }
         
