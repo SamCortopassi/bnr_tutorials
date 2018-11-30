@@ -18,29 +18,12 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
     
-        var number: Int = 0
-        
-        for number in 1...20 {
-            if number % 3 == 0, number % 5 == 0 {
-                print ("\(number) Fizz Buzz")}
-            
-            else if number % 3 == 0 {
-                    print("\(number) fizz")
-                }
-            else if number % 5 == 0 {
-                    print("\(number) buzz")
-            } else {
-                    print("\(number)")
-                    }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        var errorCodeString: String?
+        errorCodeString = "404"
+        if errorCodeString != nil {
+            let theError = errorCodeString
+        print (theError)
+    }
         
         
       
@@ -49,11 +32,11 @@ class ViewController: UIViewController {
         
     }
 
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
 
 
-}
+
