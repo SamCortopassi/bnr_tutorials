@@ -36,7 +36,9 @@ class ViewController: UIViewController {
         }
         let aAcutePrecomposed = "\u{00E1}"
         let b = (aAcute == aAcutePrecomposed)
-       print ("\(b)")
+        print ("aAcute: \(aAcute.characters.count); aAcutePrecomposed: \(aAcutePrecomposed.characters.count)")
+        
+        
         
         
         
