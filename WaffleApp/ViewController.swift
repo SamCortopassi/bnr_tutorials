@@ -18,33 +18,36 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
     
-        let playground = "Hello, playground"
-        var mutablePlayground = "Hello, mutable playground"
+        let empty = ""
+        if empty.startIndex == empty.endIndex {
+            print("this is empty")
+        }
+        if empty.isEmpty {
+            print("zippo")
+        }
         
-        mutablePlayground += "!"
-        
-        for c: Character in mutablePlayground.characters {
+//        for c: Character in mutablePlayground.characters {
         
 //        print("'\(c)'")
-        }
+//        }
         
-        let oneCoolDude = "\u{1F60E}"
+//        let oneCoolDude = "\u{1F60E}"
         
-        let aAcute = "\u{0061}\u{0301}"
-        for scalar in playground.unicodeScalars {
+//        let aAcute = "\u{0061}\u{0301}"
+//        for scalar in playground.unicodeScalars {
 //            print("\(scalar.value)")
-        }
-        let aAcutePrecomposed = "\u{00E1}"
-        let b = (aAcute == aAcutePrecomposed)
+//        }
+//        let aAcutePrecomposed = "\u{00E1}"
+//        let b = (aAcute == aAcutePrecomposed)
 //        print ("aAcute: \(aAcute.characters.count); aAcutePrecomposed: \(aAcutePrecomposed.characters.count)")
         
-        let start = playground.startIndex
-        let end = playground.index(start, offsetBy: 4)
-        let fifthCharacter = playground[end]
+//        let start = playground.startIndex
+//        let end = playground.index(start, offsetBy: 4)
+//        let fifthCharacter = playground[end]
 //        print("\(fifthCharacter)")
-        let range = start...end
-        let firstFive = playground[range]
-        print("\(firstFive)")
+//        let range = start...end
+//        let firstFive = playground[range]
+//        print("\(firstFive)")
         
         
         
