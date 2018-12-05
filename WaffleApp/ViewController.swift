@@ -18,36 +18,34 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
     
-        let empty = ""
-        if empty.startIndex == empty.endIndex {
-            print("this is empty")
-        }
-        if empty.isEmpty {
-            print("zippo")
+        class Person {
+            var name = ""
         }
         
-//        for c: Character in mutablePlayground.characters {
+        class BlogPost {
+            
+            var title:String?
+            var body = "Hey"
+            var author:Person?
+            var numberOfComments = 0
+            
+        }
+        let post = BlogPost()
+        print(post.body + " Hello!")
         
-//        print("'\(c)'")
-//        }
+        post.title = "yo"
         
-//        let oneCoolDude = "\u{1F60E}"
-        
-//        let aAcute = "\u{0061}\u{0301}"
-//        for scalar in playground.unicodeScalars {
-//            print("\(scalar.value)")
-//        }
-//        let aAcutePrecomposed = "\u{00E1}"
-//        let b = (aAcute == aAcutePrecomposed)
-//        print ("aAcute: \(aAcute.characters.count); aAcutePrecomposed: \(aAcutePrecomposed.characters.count)")
-        
-//        let start = playground.startIndex
-//        let end = playground.index(start, offsetBy: 4)
-//        let fifthCharacter = playground[end]
-//        print("\(fifthCharacter)")
-//        let range = start...end
-//        let firstFive = playground[range]
-//        print("\(firstFive)")
+        //bindng
+        if let actualTitle = post.title {
+            print(actualTitle + " salut")
+        }
+        //testing for nil
+        if post.title != nil{
+            print(post.title! + " salut")
+        }
+        if post.title == nil {
+            
+        }
         
         
         
