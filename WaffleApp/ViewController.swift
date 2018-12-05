@@ -25,8 +25,18 @@ class ViewController: UIViewController {
         
         for c: Character in mutablePlayground.characters {
         
-        print("'\(c)'")
+//        print("'\(c)'")
         }
+        
+        let oneCoolDude = "\u{1F60E}"
+        let aAcute = "\u{0061} \u{0301}"
+        for scalar in playground.unicodeScalars {
+            print("\(scalar.value)")
+        }
+        
+        print("\(oneCoolDude)")
+        
+        
         /**** END: DO STUFF HERE ****/
         
     }
