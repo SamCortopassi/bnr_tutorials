@@ -18,16 +18,15 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
     
-        var errorCodeString: String?
-        errorCodeString = "404"
-        if errorCodeString != nil {
-            let theError = errorCodeString
-        print (theError)
-    }
+        let playground = "Hello, playground"
+        var mutablePlayground = "Hello, mutable playground"
         
+        mutablePlayground += "!"
         
-      
+        for c: Character in mutablePlayground.characters {
         
+        print("'\(c)'")
+        }
         /**** END: DO STUFF HERE ****/
         
     }
