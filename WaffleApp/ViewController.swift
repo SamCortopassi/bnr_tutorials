@@ -36,9 +36,15 @@ class ViewController: UIViewController {
         }
         let aAcutePrecomposed = "\u{00E1}"
         let b = (aAcute == aAcutePrecomposed)
-        print ("aAcute: \(aAcute.characters.count); aAcutePrecomposed: \(aAcutePrecomposed.characters.count)")
+//        print ("aAcute: \(aAcute.characters.count); aAcutePrecomposed: \(aAcutePrecomposed.characters.count)")
         
-        
+        let start = playground.startIndex
+        let end = playground.index(start, offsetBy: 4)
+        let fifthCharacter = playground[end]
+//        print("\(fifthCharacter)")
+        let range = start...end
+        let firstFive = playground[range]
+        print("\(firstFive)")
         
         
         
