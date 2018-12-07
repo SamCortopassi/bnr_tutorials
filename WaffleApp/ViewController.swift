@@ -17,36 +17,16 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-    
-        class Person {
-            var name = ""
+        func printGreeting() {
+            print("hello, playground.")
         }
+        printGreeting()
         
-        class BlogPost {
-            
-            var title:String?
-            var body = "Hey"
-            var author:Person?
-            var numberOfComments = 0
-            
-        }
-        let post = BlogPost()
-        print(post.body + " Hello!")
+        func printPersonalGreeting(name: String) {
+            print("Hello \(name), welcome to your playground.")
         
-        post.title = "yo"
-        
-        //bindng
-        if let actualTitle = post.title {
-            print(actualTitle + " salut")
         }
-        //testing for nil
-        if post.title != nil{
-            print(post.title! + " salut")
-        }
-        if post.title == nil {
-            
-        }
-        
+        printPersonalGreeting(name: "Matt")
         
         
         /**** END: DO STUFF HERE ****/
