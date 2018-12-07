@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         }
         printPersonalGreeting(name: "Matt")
         
+        func divisionDescriptionFor(numerator: Double, denominator: Double) {
+            print("\(numerator) divided by \(denominator) equals \(numerator / denominator)")
+        }
+        divisionDescriptionFor(numerator: 9.0, denominator: 3.0)
         
         /**** END: DO STUFF HERE ****/
         
