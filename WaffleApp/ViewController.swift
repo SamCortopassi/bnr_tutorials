@@ -22,12 +22,16 @@ class ViewController: UIViewController {
         }
         printGreeting()
         
-        func printPersonalGreeting(name: String) {
+        func printPersonalGreeting(to names: String...) {
+            for name in names {
             print("Hello \(name), welcome to your playground.")
-        
+            }
         }
-        printPersonalGreeting(name: "Matt")
+        printPersonalGreeting(to: "Matt","Susie","Dave")
         
+            
+            
+            
         func divisionDescriptionFor(numerator: Double, denominator: Double) {
             print("\(numerator) divided by \(denominator) equals \(numerator / denominator)")
         }
