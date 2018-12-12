@@ -17,26 +17,15 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-        func printGreeting() {
-            print("hello, playground.")
-        }
-        printGreeting()
-        
-        func printPersonalGreeting(to names: String...) {
-            for name in names {
-            print("Hello \(name), welcome to your playground.")
+        var error = "The request failed:"
+        func appendErrorCode(_ code: Int, toErrorString errorString: inout String) {
+            if code == 400 {
+                errorString += " bad request."
             }
         }
-        printPersonalGreeting(to: "Matt","Susie","Dave")
         
-            
-            
-        func divisionDescriptionFor(numerator: Double, denominator: Double, withPunctuation punctuation: String = ".") {
-            print("\(numerator) divided by \(denominator) equals \(numerator / denominator)\(punctuation)")
-        }
-        divisionDescriptionFor(numerator: 9.0, denominator: 3.0)
-        divisionDescriptionFor(numerator: 9.0, denominator: 3.0, withPunctuation: "!")
-        
+        appendErrorCode(400, toErrorString: &error)
+        print("\(error)")
         
         /**** END: DO STUFF HERE ****/
         
