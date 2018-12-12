@@ -17,15 +17,15 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-        var error = "The request failed:"
-        func appendErrorCode(_ code: Int, toErrorString errorString: inout String) {
-            if code == 400 {
-                errorString += " bad request."
-            }
-        }
+        var dict1: Dictionary<String, Double> = [:]
+        var dict2 = Dictionary<String, Double>()
+        var dict3: [String:Double] = [:]
+        var dict4 = [String:Double]()
         
-        appendErrorCode(400, toErrorString: &error)
-        print("\(error)")
+        
+        var movieRatings = ["Donnie Darko": 4, "Chungking Express": 5, "Dark City": 4]
+        print("I have rated \(movieRatings.count) movies.")
+        
         
         /**** END: DO STUFF HERE ****/
         
