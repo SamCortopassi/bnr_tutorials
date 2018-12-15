@@ -19,19 +19,18 @@ class ViewController: UIViewController {
         /**** DO STUFF HERE ****/
       
         
-        
-        var movieRatings = ["Donnie Darko": 4, "Chungking Express": 5, "Dark City": 4]
-        print("I have rated \(movieRatings.count) movies.")
-        
-        let darkoRating = movieRatings["Donnie Darko"]
-        movieRatings["Dark City"] = 5
-        print("\(movieRatings)")
-        let oldRating: Int? = movieRatings.updateValue(5, forKey: "Donnie Darko")
-        if let lastRating = oldRating, let currentRating = movieRatings["Donnie Darko"] {
-            print("Old rating:\(lastRating); current rating: \(currentRating)")
+        func fizzbuzz(number: Int) -> String {
+            switch (number % 3 == 0, number % 5 == 0) {
+            case (true, false):
+                return "Fizz"
+            case (false, true):
+                return "Buzz"
+            case (true, true):
+                return "FizzBuzz"
+            case (false, false):
+                return String(number)
+            }
         }
-        
-        
         
         /**** END: DO STUFF HERE ****/
         
