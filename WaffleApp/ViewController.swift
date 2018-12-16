@@ -18,19 +18,14 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
       
-        
-        func fizzbuzz(number: Int) -> String {
-            switch (number % 3 == 0, number % 5 == 0) {
-            case (true, false):
-                return "Fizz"
-            case (false, true):
-                return "Buzz"
-            case (true, true):
-                return "FizzBuzz"
-            case (false, false):
-                return String(number)
-            }
+        var errorCodeString: String?
+       errorCodeString = "404"
+       // print(errorCodeString)
+        if errorCodeString != nil {
+            let theError = errorCodeString!
+            print(theError)
         }
+       
         
         /**** END: DO STUFF HERE ****/
         
