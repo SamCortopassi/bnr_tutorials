@@ -17,15 +17,23 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-      
-        var errorCodeString: String?
-        errorCodeString = "404"
-        if let theError = errorCodeString, let errorCodeInteger = Int(theError),
-            errorCodeInteger == 404 {
-            print("\(theError): \(errorCodeInteger)")
+        
+        class Person {
+            var residence: Residence?
+            
         }
+      
+        class Residence {
+            var numberOfRooms = 1
+        }
+        let john = Person()
+        john.residence = Residence()
         
-        
+        if let roomCount = john.residence?.numberOfRooms {
+            print("John's residence has \(roomCount) room(s).")
+        } else {
+            print("unable to retrieve the number of rooms.")
+        }
         
         /**** END: DO STUFF HERE ****/
         
