@@ -26,7 +26,10 @@ class ViewController: UIViewController {
         }
         
         var upCaseErrorDescription = errorDescription?.uppercased()
-        print("\(errorDescription)")
+        print(errorDescription)
+        
+        upCaseErrorDescription?.append(" PLEASE TRY AGAIN.")
+        print(upCaseErrorDescription)
         
         /**** END: DO STUFF HERE ****/
         
