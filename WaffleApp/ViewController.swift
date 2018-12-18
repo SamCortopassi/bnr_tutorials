@@ -18,22 +18,15 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
         
-        class Person {
-            var residence: Residence?
-            
+        var errorCodeString: String?
+        errorCodeString = "404"
+        var errorDescription: String?
+        if let theError = errorCodeString, let errorCodeInteger = Int(theError), errorCodeInteger == 404 {
+            errorDescription = "\(errorCodeInteger + 200): resource was not found."
         }
-      
-        class Residence {
-            var numberOfRooms = 1
-        }
-        let john = Person()
-        john.residence = Residence()
         
-        if let roomCount = john.residence?.numberOfRooms {
-            print("John's residence has \(roomCount) room(s).")
-        } else {
-            print("unable to retrieve the number of rooms.")
-        }
+        var upCaseErrorDescription = errorDescription?.uppercased()
+        print("\(errorDescription)")
         
         /**** END: DO STUFF HERE ****/
         
