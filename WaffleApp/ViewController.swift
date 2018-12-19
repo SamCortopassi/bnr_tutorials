@@ -31,6 +31,13 @@ class ViewController: UIViewController {
         upCaseErrorDescription?.append(" PLEASE TRY AGAIN.")
         print(upCaseErrorDescription)
         
+        let description: String
+        if let errorDescription = errorDescription {
+            description = errorDescription
+        } else {
+            description = "no error"
+        }
+        
         /**** END: DO STUFF HERE ****/
         
     }
