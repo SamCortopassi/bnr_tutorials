@@ -19,15 +19,10 @@ class ViewController: UIViewController {
         /**** DO STUFF HERE ****/
         var errorCodeString: String?
         errorCodeString = "404"
-//        print(errorCodeString)
-//        if errorCodeString != nil {
-//            let theError = errorCodeString!
-        if let theError = errorCodeString {
-            if let errorCodeInteger = Int(theError) {
-                print("\(theError): \(errorCodeInteger)")
-            }
-    }
-        
+        if let theError = errorCodeString, let errorCodeInteger = Int(theError),
+            errorCodeInteger == 404 {
+            print("\(theError): \(errorCodeInteger)")
+        }
         
         /**** END: DO STUFF HERE ****/
         
