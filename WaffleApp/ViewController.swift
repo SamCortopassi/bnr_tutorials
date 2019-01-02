@@ -17,26 +17,17 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-        
         var errorCodeString: String?
         errorCodeString = "404"
-        var errorDescription: String?
-        if let theError = errorCodeString, let errorCodeInteger = Int(theError), errorCodeInteger == 404 {
-            errorDescription = "\(errorCodeInteger + 200): resource was not found."
-        }
+//        print(errorCodeString)
+//        if errorCodeString != nil {
+//            let theError = errorCodeString!
+        if let theError = errorCodeString {
+            if let errorCodeInteger = Int(theError) {
+                print("\(theError): \(errorCodeInteger)")
+            }
+    }
         
-        var upCaseErrorDescription = errorDescription?.uppercased()
-        print(errorDescription)
-        
-        upCaseErrorDescription?.append(" PLEASE TRY AGAIN.")
-        print(upCaseErrorDescription)
-        
-        let description: String
-        if let errorDescription = errorDescription {
-            description = errorDescription
-        } else {
-            description = "no error"
-        }
         
         /**** END: DO STUFF HERE ****/
         
