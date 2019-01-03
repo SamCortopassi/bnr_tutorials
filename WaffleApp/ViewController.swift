@@ -18,17 +18,17 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
         
-        var errorCodeString: String?
-        errorCodeString = "404"
-        var errorDescription: String?
-        if let theError = errorCodeString, let errorCodeInteger = Int(theError), errorCodeInteger == 404 {
-        }
-        
-        errorDescription = nil
-        let description = errorDescription ?? "no error"
+        var bucketList = ["Climb Mt. Everest"]
+        bucketList.append("Fly hot air balloon to Fiji")
+        bucketList.append("watch LOTR trilogy in one day")
+        bucketList.append("go on a walkabout")
+        bucketList.append("Scuba dice in the Great Blue Hole")
+        bucketList.append("Find a triple rainbow")
         
         
-        print (errorDescription)
+        
+        print(bucketList)
+        
         
         /**** END: DO STUFF HERE ****/
         
