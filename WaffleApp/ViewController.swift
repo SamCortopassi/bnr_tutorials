@@ -29,8 +29,8 @@ class ViewController: UIViewController {
 var newItems = [
     "Climb Mt. Everest",
     "Fly hot air balloon to Fiji",
-    "watch LOTR trilogy in one day",
-    "go on a walkabout",
+    "Watch LOTR trilogy in one day",
+    "Go on a walkabout",
     "Scuba dice in the Great Blue Hole",
     "Find a triple rainbow"
     ]
@@ -41,7 +41,7 @@ var newItems = [
         bucketList += newItems
 
         bucketList.remove(at: 2)
-        bucketList[0] = "climb mt kilimanjaro"
+        bucketList[0] = "Climb Mt. Kilimanjaro"
         
         print(bucketList.count)
         bucketList[2] += " in Australia"
@@ -50,6 +50,22 @@ var newItems = [
         bucketList.insert("Toboggan across AK", at: 2)
         print (bucketList)
         
+        var myronsList = [
+            "Climb mt> Kilimanjaro",
+            "Fly hot air balloon to Fiji",
+            "Go on a walkabout in Australia",
+            "Scuba dive in the Great Blue Hole",
+            "Find a triple rainbow"
+            ]
+        
+        let equal = (bucketList == myronsList)
+        
+        let lunches = [
+            "cheeseburger",
+            "veggie pizza",
+            "ckn cesar salad",
+            "Falafel wrap"
+        ]
         
         /**** END: DO STUFF HERE ****/
         
