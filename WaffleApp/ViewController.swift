@@ -19,10 +19,14 @@ class ViewController: UIViewController {
         /**** DO STUFF HERE ****/
         var errorCodeString: String?
         errorCodeString = "404"
-        if let theError = errorCodeString, let errorCodeInteger = Int(theError),
-            errorCodeInteger == 404 {
-            print("\(theError): \(errorCodeInteger)")
+        var errorDescription: String?
+        if let theError = errorCodeString, let errorCodeInteger = Int(theError), errorCodeInteger == 404 {
+            errorDescription = "\(errorCodeInteger + 200): resource was not found."
         }
+//        var upCaseErrorDescription = errorDescription?.uppercased()
+        print(errorDescription?.uppercased())
+        
+        
         
         /**** END: DO STUFF HERE ****/
         
