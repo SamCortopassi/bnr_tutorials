@@ -25,10 +25,14 @@ class ViewController: UIViewController {
         bucketList.append("Scuba dice in the Great Blue Hole")
         bucketList.append("Find a triple rainbow")
         
+        bucketList.remove(at: 2)
+        bucketList[0] = "climb mt kilimanjaro"
         
-        
-        print(bucketList)
-        
+        print(bucketList.count)
+        bucketList[2] += " in Australia"
+        print(bucketList[4])
+        print(bucketList[0...2])
+
         
         /**** END: DO STUFF HERE ****/
         
