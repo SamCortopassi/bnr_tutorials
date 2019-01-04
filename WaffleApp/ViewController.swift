@@ -17,14 +17,27 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-
-        var dict1: Dictionary<String, Double> = [:]
-        var dict2 = Dictionary<String, Double>()
-        var dict3: [String:Double] = [:]
-        var dict4 = [String:Double]()
+//
+//        var dict1: Dictionary<String, Double> = [:]
+//        var dict2 = Dictionary<String, Double>()
+//        var dict3: [String:Double] = [:]
+//        var dict4 = [String:Double]()
         
         var movieRatings = ["Donnie Darko": 4, "Chungking Ezpress": 5, "Dark City": 4]
         print("I have rated \(movieRatings.count) movies")
+        let darkoRating = movieRatings["Donnie Darko"]
+        movieRatings["Dark City"] = 5
+        print(movieRatings)
+        let oldRating: Int? = movieRatings.updateValue(5, forKey: "Donnie Darko")
+        if let lastRating = oldRating, let currentRating = movieRatings["Donnie Darko"] {
+        print("Old rating: \(lastRating); current rating: \(currentRating)")
+        }
+        movieRatings["The Cabinet of Dr. Caligari"] = 5
+        movieRatings.removeValue(forKey: "Dark City")
+        
+        print (movieRatings)
+        
+        
         
         /**** END: DO STUFF HERE ****/
         
