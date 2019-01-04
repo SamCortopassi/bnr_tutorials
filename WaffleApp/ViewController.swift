@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         print("Old rating: \(lastRating); current rating: \(currentRating)")
         }
         movieRatings["The Cabinet of Dr. Caligari"] = 5
-        movieRatings.removeValue(forKey: "Dark City")
-        
+//        movieRatings.removeValue(forKey: "Dark City")
+        movieRatings["Dark City"] = nil
         print (movieRatings)
         
         
