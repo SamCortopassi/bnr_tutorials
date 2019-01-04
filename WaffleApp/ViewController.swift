@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 //        var dict3: [String:Double] = [:]
 //        var dict4 = [String:Double]()
         
-        var movieRatings = ["Donnie Darko": 4, "Chungking Ezpress": 5, "Dark City": 4]
+        var movieRatings = ["Donnie Darko": 4, "Chungking Express": 5, "Dark City": 4]
         print("I have rated \(movieRatings.count) movies")
         let darkoRating = movieRatings["Donnie Darko"]
         movieRatings["Dark City"] = 5
@@ -38,7 +38,18 @@ class ViewController: UIViewController {
         for (key, value) in movieRatings {
             print("The movie \(key) was rated \(value).")
         }
+        for movie in movieRatings.keys {
+            print("User has rated \(movie).")
+        }
         
+        let watchedMovies = Array(movieRatings.keys)
+        print(watchedMovies)
+        
+//
+//        let album = ["Diet Roast Beef": 268,
+//                     "Dubba Dubbs Stubs His Toe": 467,
+//                     "Smokey's Carpet Cleaning Service": 187,
+//                     "Track 4": 221]
         
         
         /**** END: DO STUFF HERE ****/
