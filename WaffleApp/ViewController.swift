@@ -34,8 +34,10 @@ class ViewController: UIViewController {
         }
         movieRatings["The Cabinet of Dr. Caligari"] = 5
 //        movieRatings.removeValue(forKey: "Dark City")
-        movieRatings["Dark City"] = nil
-        print (movieRatings)
+//        movieRatings["Dark City"] = nil
+        for (key, value) in movieRatings {
+            print("The movie \(key) was rated \(value).")
+        }
         
         
         
