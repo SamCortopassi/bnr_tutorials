@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         }
         
         let hasBananas = groceryBag.contains("bananas")
+        let friendsGroceryBag = Set (["bananas", "cereal", "milk", "oranges"])
+        let commonGroceryBag = groceryBag.union(friendsGroceryBag)
         
         
         /**** END: DO STUFF HERE ****/
