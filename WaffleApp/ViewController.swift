@@ -19,14 +19,22 @@ class ViewController: UIViewController {
         
         /**** DO STUFF HERE ****/
 
-        var groceryBag = Set<String>()
-        groceryBag.insert("Apples")
-        groceryBag.insert("Oranges")
-        groceryBag.insert("Pineapple")
+//        var groceryBag = Set<String>()
+//        groceryBag.insert("Apples")
+//        groceryBag.insert("Oranges")
+//        groceryBag.insert("Pineapple")
+//
+//            for food in groceryBag {
+//             print(food)
+//                }
+    
+        var groceryBag: Set = ["apples", "orange", "pineapple"]
         
-            for food in groceryBag {
-             print(food)
-                }
+        for food in groceryBag {
+            print(food)
+        }
+        
+        let hasBananas = groceryBag.contains("bananas")
         
         
         /**** END: DO STUFF HERE ****/
