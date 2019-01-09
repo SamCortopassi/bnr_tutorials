@@ -18,59 +18,15 @@ class ViewController: UIViewController {
        
         
         /**** DO STUFF HERE ****/
-//
-//        var dict1: Dictionary<String, Double> = [:]
-//        var dict2 = Dictionary<String, Double>()
-//        var dict3: [String:Double] = [:]
-//        var dict4 = [String:Double]()
-//
-//        var movieRatings = ["Donnie Darko": 4, "Chungking Express": 5, "Dark City": 4]
-//        print("I have rated \(movieRatings.count) movies")
-//        let darkoRating = movieRatings["Donnie Darko"]
-//        movieRatings["Dark City"] = 5
-//        print(movieRatings)
-//        let oldRating: Int? = movieRatings.updateValue(5, forKey: "Donnie Darko")
-//        if let lastRating = oldRating, let currentRating = movieRatings["Donnie Darko"] {
-//        print("Old rating: \(lastRating); current rating: \(currentRating)")
-//        }
-//        movieRatings["The Cabinet of Dr. Caligari"] = 5
-////        movieRatings.removeValue(forKey: "Dark City")
-////        movieRatings["Dark City"] = nil
-//        for (key, value) in movieRatings {
-//            print("The movie \(key) was rated \(value).")
-//        }
-//        for movie in movieRatings.keys {
-//            print("User has rated \(movie).")
-//        }
-//
-//        let watchedMovies = Array(movieRatings.keys)
-//        print(watchedMovies)
-//
-  
-        var countiesInTexas = ["Tarrant": [76166, 76001, 76002, 76005, 76006],
-                               "Denton": [76206, 76204, 76205, 76207, 76033],
-                               "Dallas": [75242, 75390, 75260, 75398, 75265]]
-       
-        
-//            print(" the zip codes in \(countiesInTexas).")
 
-        for(key, value) in countiesInTexas {
-            print("zip code \(value) ")
-        }
-
+        var groceryBag = Set<String>()
+        groceryBag.insert("Apples")
+        groceryBag.insert("Oranges")
+        groceryBag.insert("Pineapple")
         
-//                               "Denton",
-//                               "Dallas"] , "Tarrant": , "Tarrant":  "Tarrant":
-        
-//        tarrant - 76166, 76001, 76002, 76005, 76006
-//        Denton - 76206, 76204, 76205, 76207, 76033
-//        Dallas - 75242, 75390, 75260, 75398, 75265
-//
-//
-//        let album = ["Diet Roast Beef": 268,
-//                     "Dubba Dubbs Stubs His Toe": 467,
-//                     "Smokey's Carpet Cleaning Service": 187,
-//                     "Track 4": 221]
+            for food in groceryBag {
+             print(food)
+                }
         
         
         /**** END: DO STUFF HERE ****/
