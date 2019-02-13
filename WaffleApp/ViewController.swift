@@ -8,46 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-       
-        
-        /**** DO STUFF HERE ****/
-
-//        var groceryBag = Set<String>()
-//        groceryBag.insert("Apples")
-//        groceryBag.insert("Oranges")
-//        groceryBag.insert("Pineapple")
+//class ViewController: UIViewController {
 //
-//            for food in groceryBag {
-//             print(food)
-//                }
-    
-        var groceryBag: Set = ["apples", "orange", "pineapple"]
-        
-        for food in groceryBag {
-            print(food)
-        }
-        
-        let hasBananas = groceryBag.contains("bananas")
-        let friendsGroceryBag = Set (["bananas", "cereal", "milk", "oranges"])
-        let commonGroceryBag = groceryBag.union(friendsGroceryBag)
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view, typically from a nib.
+//        
+//        var str = "hello, playground"
+//        var playgroundGreeting = str
+//        playgroundGreeting += "! How are you today"
+////        print(str)
+//    
+//        class GreekGod {
+//            var name: String
+//            init(name: String) {
+//                self.name = name
+//            }
+//        }
+//        let hecate = GreekGod(name: "Hecate")
+//        let anotherHecate = hecate
+//        anotherHecate.name = "AnotherHecate"
+////        anotherHecate.name
+////        hecate.name
+//        struct Pantheon {
+//            var chiefGod: GreekGod
+//        }
+//        let pantheon = Pantheon(chiefGod: hecate)
+//        let zeus = GreekGod(name: "Zeus")
+////        pantheon.chiefGod = zeus
+//        zeus.name = "Zeus Jr."
+//        
+//        print("\(zeus)")
         
         
         /**** END: DO STUFF HERE ****/
         
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-}
-
+//
+//func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//         Dispose of any resources that can be recreated.
+////    }
+//}
+//}
+//
+////        let coffee = ["coffee", "expresso", "cappuccino", "latte", "mocha", "apple"]
+//        let longest = coffee.sorted(by: )
 
 
