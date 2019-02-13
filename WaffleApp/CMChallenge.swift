@@ -14,36 +14,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        Do any additional setup after loading the view, typically from a nib.
  
-var shields = 5
-        var blastersOverheating = false
-        var blasterFireCount = 0
-        var spaceDeamonsDestroyed = 0
-        while shields > 0 {
-            
-            if spaceDeamonsDestroyed == 500 {
-                print("WIN")
-                break
-            }
-            
-            if blastersOverheating{
-                print("Blasters are overheated")
-                sleep(5)
-                print("blasters ready to fire")
-                sleep(1)
-                blastersOverheating = false
-                blasterFireCount = 0
-            }
-            if blasterFireCount > 100 {
-                blastersOverheating = true
-                continue
-            }
-            print("fire blasters")
-            
-            blasterFireCount += 1
-            
-            }
+        
+        func printGreeting() {
+            print("hello")
         }
-
+        printGreeting()
+        
+        func printPersonalGreeting(name: String) {
+            print("hello \(name) welcome")
+        }
+        printPersonalGreeting(name: "Steve")
+        
+        func dividionDescriptionFor(numerator: Double, denominator: Double) {
+            print("\(numerator) divided by (denominator) equals \(numerator / denominator)")
+        }
+        dividionDescriptionFor(numerator: 9.0, denominator: 3.0)
+    
+    }
 
         /**** END: DO STUFF HERE ****/
         
