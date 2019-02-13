@@ -14,23 +14,45 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        Do any additional setup after loading the view, typically from a nib.
  
-
- var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        var something = numbers.max()
-        func thing1() { something = numbers.remove
-        } else if {
+var shields = 5
+        var blastersOverheating = false
+        var blasterFireCount = 0
+        var spaceDeamonsDestroyed = 0
+        while shields > 0 {
             
+            if spaceDeamonsDestroyed == 500 {
+                print("WIN")
+                break
+            }
+            
+            if blastersOverheating{
+                print("Blasters are overheated")
+                sleep(5)
+                print("blasters ready to fire")
+                sleep(1)
+                blastersOverheating = false
+                blasterFireCount = 0
+            }
+            if blasterFireCount > 100 {
+                blastersOverheating = true
+                continue
+            }
+            print("fire blasters")
+            
+            blasterFireCount += 1
+            
+            }
         }
-        
-        print("\(something)")
+
 
         /**** END: DO STUFF HERE ****/
         
         
         
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
 //                Dispose of any resources that can be recreated.
             }
-    }
+    
 }
+
