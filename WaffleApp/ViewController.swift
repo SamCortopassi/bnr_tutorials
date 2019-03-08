@@ -19,15 +19,11 @@ class ViewController: UIViewController {
 //        fizz %3 buzz %5
         //        for i in 1...20 {
 //
-        var myFirstInt: Int = 0
-        
-        for i in 1...50 { if i % 3 == 0 && i % 5 == 0 { print("\(i) FIZZBUZZ")
-            } else { if i % 3 == 0 { print("\(i) fizz")
-            } else { if i % 5 == 0 { print("\(i) buzz") }
-            }
+        for i in 1...15 {
+            if i % 3 == 0 && i % 5 == 0 { print ("\(i) FIZZBUZZ") }
+            if i % 3 == 0 { print ("\(i) fizz") }
+            if i % 5 == 0 { print ("\(i) buzz") }
         }
-        }
-        
         /**** END: DO STUFF HERE ****/
         
     }
