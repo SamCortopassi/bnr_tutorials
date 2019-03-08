@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66723ED22213CA160092EED2 /* CMChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66723ED12213CA160092EED2 /* CMChallenge.swift */; };
 		66D9ABCD212B99BF0006A474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D9ABCC212B99BF0006A474 /* AppDelegate.swift */; };
 		66D9ABCF212B99BF0006A474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D9ABCE212B99BF0006A474 /* ViewController.swift */; };
 		66D9ABD2212B99BF0006A474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D9ABD0212B99BF0006A474 /* Main.storyboard */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		66723ED12213CA160092EED2 /* CMChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMChallenge.swift; sourceTree = "<group>"; };
 		66D9ABC9212B99BF0006A474 /* WaffleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaffleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D9ABCC212B99BF0006A474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66D9ABCE212B99BF0006A474 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			children = (
 				66D9ABCC212B99BF0006A474 /* AppDelegate.swift */,
 				66D9ABCE212B99BF0006A474 /* ViewController.swift */,
-				66723ED12213CA160092EED2 /* CMChallenge.swift */,
 				66D9ABD0212B99BF0006A474 /* Main.storyboard */,
 				66D9ABD3212B99C10006A474 /* Assets.xcassets */,
 				66D9ABD5212B99C10006A474 /* LaunchScreen.storyboard */,
@@ -196,13 +193,16 @@
 				TargetAttributes = {
 					66D9ABC8212B99BF0006A474 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					66D9ABDC212B99C10006A474 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 66D9ABC8212B99BF0006A474;
 					};
 					66D9ABE7212B99C10006A474 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 66D9ABC8212B99BF0006A474;
 					};
 				};
@@ -259,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66723ED22213CA160092EED2 /* CMChallenge.swift in Sources */,
 				66D9ABCF212B99BF0006A474 /* ViewController.swift in Sources */,
 				66D9ABCD212B99BF0006A474 /* AppDelegate.swift in Sources */,
 			);
@@ -442,7 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Samantha.WaffleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Samantha.WaffleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -478,7 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Samantha.WaffleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaffleApp.app/WaffleApp";
 			};
@@ -498,7 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Samantha.WaffleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaffleApp.app/WaffleApp";
 			};
@@ -517,7 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Samantha.WaffleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WaffleApp;
 			};
@@ -536,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Samantha.WaffleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WaffleApp;
 			};
