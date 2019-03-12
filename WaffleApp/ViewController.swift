@@ -21,14 +21,16 @@ class ViewController: UIViewController {
 //
       
         for i in 1...20 {
-            if i % 3 == 0 && i % 5 == 0 {print("\(i) FIZZBUZZ")}
-            else if i % 3 == 0 {print("\(i) fizz")}
-            else if i % 5 == 0 {print("\(i) buzz")}
-         else {
-            print ("\(i)")
-            }
+        if i % 3 == 0 && i % 5 == 0 {
+            print("\(i) FizzBuzz")
+        } else if i % 3 == 0 {
+            print("\(i) F")
+        } else if i % 5 == 0 {
+            print("\(i) B")
         }
-        
+    }
+    
+    
         /**** END: DO STUFF HERE ****/
         
     }
