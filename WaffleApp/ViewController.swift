@@ -19,25 +19,33 @@ class ViewController: UIViewController {
 //        fizz %3 buzz %5
         //        for i in 1...20 {
 //
-        for i in 1...100
-        {
-            if i % 3 == 0 && i % 5 == 0 {
-                print("FizzBuzz")
-            } else if i % 3 == 0 {
-                print("Fizz")
-            } else if i % 5 == 0 {
-                print("Buzz")
-            } else {
-                print(i)
+        let json = "{ 'hello' : 'world'}"
+        let url = URL(string: "http://httpbin.org/post")!
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "Post"
+        request.httpBody = json.data(using: .utf8)
+        
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: request)
+        
+            (data, response, error) in
+        if let data = data {
+            if let postResponse = String(data: data, encoding: .utfi) {
+                print(postResponse)
+            }
             }
         }
+    task.resume()
+    
+}
 
         /**** END: DO STUFF HERE ****/
         
     }
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
-}
+
